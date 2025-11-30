@@ -1,0 +1,41 @@
+{
+  "name": "paybridge-backend",
+  "version": "1.0.0",
+  "description": "PayBridge - Third-party Payment Gateway Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "db:sync": "node src/utils/syncDatabase.js",
+    "db:test": "node src/utils/dbManager.js test",
+    "db:reset": "node src/utils/dbManager.js reset",
+    "db:stats": "node src/utils/dbManager.js stats",
+    "db:check": "node src/utils/checkDatabase.js",
+    "test": "jest"
+  },
+  "keywords": ["payment", "gateway", "stripe", "api"],
+  "author": "PayBridge Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.3.1",
+    "sequelize": "^6.35.2",
+    "mysql2": "^3.6.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "express-validator": "^7.0.1",
+    "stripe": "^14.9.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

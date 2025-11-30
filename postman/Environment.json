@@ -1,0 +1,62 @@
+{
+	"id": "paybridge-environment",
+	"name": "PayBridge Environment",
+	"values": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3000",
+			"enabled": true
+		},
+		{
+			"key": "jwt_token",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "api_key",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "payment_id",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "stripe_payment_intent_id",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "merchant_id",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "payment_method_id",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "stripe_secret_key",
+			"value": "YOUR_STRIPE_SECRET_KEY_HERE",
+			"enabled": true
+		},
+		{
+			"key": "stripe_publishable_key",
+			"value": "YOUR_STRIPE_PUBLISHABLE_KEY_HERE",
+			"enabled": true
+		},
+		{
+			"key": "db_name",
+			"value": "paybridge",
+			"enabled": true
+		},
+		{
+			"key": "port",
+			"value": "3000",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment"
+}
