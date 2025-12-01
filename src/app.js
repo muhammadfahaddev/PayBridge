@@ -7,12 +7,12 @@ require('dotenv').config();
 
 const errorHandler = require('./middleware/errorHandler');
 const authRoutes = require('./routes/authRoutes');
+const apiKeyRoutes = require('./routes/apiKeyRoutes');
 const merchantRoutes = require('./routes/merchantRoutes');
 const paymentRoutes = require('./routes/paymentRoutes');
 const refundRoutes = require('./routes/refundRoutes');
 const cardRoutes = require('./routes/cardRoutes');
 const testRoutes = require('./routes/testRoutes');
-const apiKeyRoutes = require('./routes/apiKeyRoutes');
 
 const app = express();
 
