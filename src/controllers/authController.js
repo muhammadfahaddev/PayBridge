@@ -31,6 +31,7 @@ class AuthController {
         name, 
         email, 
         password: hashedPassword,
+        api_key: apiKey,
         api_key_hash: hashedApiKey
       });
       
@@ -101,6 +102,7 @@ class AuthController {
           merchant_id: merchant.id,
           name: merchant.name,
           email: merchant.email,
+          api_key: merchant.api_key,
           token
         }
       });
@@ -119,6 +121,7 @@ class AuthController {
           merchant_id: merchant.id,
           name: merchant.name,
           email: merchant.email,
+          api_key: merchant.api_key,
           is_active: merchant.is_active,
           created_at: merchant.created_at
         }

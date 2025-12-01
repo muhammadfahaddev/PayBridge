@@ -12,6 +12,7 @@ const paymentRoutes = require('./routes/paymentRoutes');
 const refundRoutes = require('./routes/refundRoutes');
 const cardRoutes = require('./routes/cardRoutes');
 const testRoutes = require('./routes/testRoutes');
+const apiKeyRoutes = require('./routes/apiKeyRoutes');
 
 const app = express();
 
@@ -52,6 +53,7 @@ app.use('/api/v1/merchant', merchantRoutes);
 app.use('/api/v1/payments', paymentRoutes);
 app.use('/api/v1/refunds', refundRoutes);
 app.use('/api/v1/cards', cardRoutes);
+app.use('/api/v1/api-key', apiKeyRoutes);
 app.use('/api/v1/test', testRoutes);
 
 // 404 handler

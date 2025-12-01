@@ -32,6 +32,11 @@ const Merchant = sequelize.define('merchants', {
       len: [6, 255]
     }
   },
+  api_key: {
+    type: DataTypes.STRING(255),
+    allowNull: false,
+    unique: true
+  },
   api_key_hash: {
     type: DataTypes.STRING(255),
     allowNull: false,
