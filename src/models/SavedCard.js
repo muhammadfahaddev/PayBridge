@@ -18,8 +18,7 @@ const SavedCard = sequelize.define('saved_cards', {
   },
   payment_method_id: {
     type: DataTypes.STRING(255),
-    allowNull: false,
-    unique: true
+    allowNull: false
   },
   card_brand: {
     type: DataTypes.STRING(20),
